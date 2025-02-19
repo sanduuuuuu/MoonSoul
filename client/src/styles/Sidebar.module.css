@@ -1,0 +1,48 @@
+.menuBtn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s;
+  }
+  
+  .sidebarOpen {
+    left: 0;
+  }
+  
+  .closeBtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .menuList {
+    list-style: none;
+    padding: 20px 0;
+  }
+  
+  .menuList li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }

@@ -1,0 +1,63 @@
+/* components/Products/Products.module.css */
+.productsSection {
+    padding: 5rem 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+    z-index: 50;
+  }
+  
+  .productsSection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .productCard {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .productImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .productCard h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .productCard p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #a18565;
+    font-size: 1.2rem;
+  }

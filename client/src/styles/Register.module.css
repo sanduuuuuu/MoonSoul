@@ -1,0 +1,121 @@
+/* components/AuthModal/AuthModal.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0.5rem;
+}
+
+.closeButton:hover {
+  color: #333;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.nameContainer{
+    display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.formGroup input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #c5a47e;
+  box-shadow: 0 0 0 2px rgba(197, 164, 126, 0.2);
+}
+
+.submitButton {
+  background-color: #c5a47e;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #b08f69;
+}
+
+.toggleText {
+  text-align: center;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  color: #c5a47e;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.2rem;
+}
+
+.toggleButton:hover {
+  text-decoration: underline;
+}

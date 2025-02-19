@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    height: auto;
+    overflow-x: scroll;
+  }
+  
+  .container > :nth-child(1) {
+    grid-row: 1;
+    
+  }
+  
+  .container > :nth-child(2) {
+    grid-row: 2;
+    
+  }
+  

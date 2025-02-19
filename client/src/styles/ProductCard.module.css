@@ -1,0 +1,122 @@
+/* ProductCard.module.css */
+.productCard {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .productDetails {
+    padding: 1.5rem;
+  }
+  
+  .productName {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+  }
+  
+  .productPrice {
+    color: #c5a47e;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .productDescription {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .addToCartButton {
+    width: 100%;
+    background-color: #c5a47e;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addToCartButton:hover {
+    background-color: #b08f69;
+  }
+  
+  .productsGrid.list {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+   .productsGrid.list.productCard {
+    flex-direction: row; /* Horizontal layout */
+    text-align: left;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+   }
+  
+   .productsGrid.list.productImage{
+    flex: 0 0 200px; /* Fixed width for image in list view */
+   }
+   .productsGrid.list.productImage img {
+    width: 100%; /* Ensure image fits its container */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and fill container */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  .productsGrid.list.productDetails {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .productsGrid.grid-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .shopContainer {
+      flex-direction: column;
+    }
+  
+    .filters {
+      width: 100%;
+    }
+  
+    .productsGrid.grid-4,
+    .productsGrid.grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productsGrid.grid-4,
+    .productsGrid.grid-3,
+    .productsGrid.list {
+      grid-template-columns: 1fr;
+    }
+  
+    .bannerContent {
+      padding: 1.5rem;
+      width: 90%;
+    }
+  
+    .bannerContent h1 {
+      font-size: 2rem;
+    }
+  }

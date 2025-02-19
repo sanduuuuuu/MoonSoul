@@ -1,0 +1,231 @@
+/* components/Footer/Footer.module.css */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 4rem 5% 2rem;
+    margin-top: auto;
+  }
+  
+  .footerContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+  
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerSection h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #c5a47e;
+  }
+  
+  .footerSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerSection li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .footerSection a {
+    color: #ffffffcc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerSection a:hover {
+    color: #c5a47e;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    color: #ffffff99;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .socialIcons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    color: #c5a47e;
+  }
+  
+  .copyright {
+    border-top: 1px solid #ffffff1a;
+    padding-top: 2rem;
+    text-align: center;
+    color: #ffffff99;
+  }
+  
+  .legalLinks {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .legalLinks a {
+    color: #ffffff99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .legalLinks a:hover {
+    color: #c5a47e;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .socialIcons {
+      justify-content: center;
+    }
+  
+    .footerSection {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .brandContainer{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    left: 45%;
+  }
+
+  .brandName {
+    display: flex;
+    gap: -5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .logoimg {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+  }
+
+  .accordion {
+    background: none;
+    border: none;
+    color: #c5a47e;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    padding:  0;
+  }
+  
+  .icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .open {
+    transform: rotate(180deg);
+  }
+  
+  .menuItems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .show {
+    max-height: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footerSection {
+      border-bottom: 1px solid #ffffff1a;
+      padding-bottom: 1rem;
+    }
+  }
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerSection {
+    width: 100%;
+    border-bottom: 1px solid #ffffff1a;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 390px) { /* iPhone 12 Portrait */
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footerSection {
+    padding-bottom: 0.8rem;
+  }
+
+  .accordion {
+    font-size: 1rem;
+  }
+
+  .socialIcons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .accordion {
+    display: none;
+  }
+
+  .menuItems {
+    max-height: none;
+    overflow: visible;
+  }
+}

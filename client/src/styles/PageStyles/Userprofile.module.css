@@ -1,0 +1,99 @@
+.container {
+  max-width: 1200px;
+  margin: 130px auto;
+  padding: 0 0.5rem;
+}
+
+/* Navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.navTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.subtext{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.title {
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.logoutText {
+  font-size: 1.2rem;
+  color: #c5a47e;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logoutText:hover {
+  color: #b08f69;
+}
+
+/* User Details */
+.userDetails {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.addAddress {
+  color: #c5a47e;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.addAddress:hover {
+  color: #b08f69;
+}
+
+/* Sections */
+.section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+/* Order Styles */
+.noOrders {
+  text-align: center;
+  color: #666;
+}
+
+.shopLink {
+  color: #c5a47e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.shopLink:hover {
+  text-decoration: underline;
+}
