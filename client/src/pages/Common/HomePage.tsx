@@ -6,16 +6,18 @@ import styles from '../../styles/PageStyles/Home.module.css'; // Adjust the path
 import CartSection from '../../components/UI/CartSection';
 import Footer from '../../components/UI/FooterSection';
 import SearchSection from '../../components/UI/SearchSection';
-
+import FeaturesSection from '../../components/UI/FeatureSection';
 const HomePage: React.FC = () => {
   
   return (
     <div className={styles.container}>
       <Navbar/>
       <HeroSection />
-      <ProductSection />
+      
       <CartSection />
       <SearchSection />
+      <FeaturesSection />
+      <ProductSection />
       <Footer />
     </div>
   );

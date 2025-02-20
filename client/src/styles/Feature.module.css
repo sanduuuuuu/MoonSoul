@@ -1,0 +1,43 @@
+.featuresContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .featureIcon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .featuresContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .featureItem {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  }

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Common/HomePage';
 import ShopPage from './pages/Customer/ShopPage';
 import AuthModel from './api/AuthModal';
+// import CartSection from './components/UI/CartSection';  
+// import SearchSection from './components/UI/SearchSection';
 import UserProfile from './pages/Common/UserprofilePage'; // Adjust the path as necessary
 
 
@@ -19,8 +21,6 @@ const App: React.FC = () => {
       <Route path="/register" element={<AuthModel onClose={() => console.log('Modal closed')} />} />
       <Route path= "/shop" element={<ShopPage />} />
       <Route path="/profile" element={<UserProfile />} />
-        {/* <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} /> */}
       </Routes>
     </Router>
   );
